@@ -8,13 +8,11 @@ function App() {
       Jgrtowy's site
     </header>
       <div id='main'>
-        <img src="/public/under.png" />
+        <img src="/under.png" />
           <h1>Under construction, check back later!</h1>
       </div>
     </>
   )
 }
-
-
 
 export default App
