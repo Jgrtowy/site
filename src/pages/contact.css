@@ -1,12 +1,4 @@
-@font-face {
-     font-family: 'Nunito';
-     src: url('../Nunito-Light.ttf');
-}
-@font-face {
-     font-family: 'Nunito-Medium';
-     src: url('../Nunito-Medium.ttf');
-}
-#projects{
+#contact{
      text-align: center;
      width:50%;
      font-family: 'Nunito';
@@ -24,7 +16,7 @@
      box-shadow: var(--box-shadow-normal);
      text-shadow: var(--text-shadow-normal);
 }
-#projects > h1{
+#contact > h1{
      font-size: 2vw;
 }
 .cardRow{
@@ -36,7 +28,7 @@
 .card{
      box-shadow: #000 .7vw .7vw 1vw;
      width: 50%;
-     height: 25vh;
+     height: fit-content;
      margin: 1.2vw;
      /* padding: 1rem; */
      justify-content: center;
@@ -47,11 +39,10 @@
 }
 .cardImg{
      display: flex;
-     border-radius: 2vw;
      /* margin: 1.1rem; */
      position: relative;
-     width: 4.5vw;
-     height: 4.5vw;
+     width: 4vw;
+     height: 4vw;
      margin: .8vw 0 0 .8vw;
      /* border-radius: 2rem; */
      padding: .8vw;
@@ -61,11 +52,12 @@
      
 }
 .cardContent > h1{
-     font-size: 2.3vw;
+     font-size: 1.6vw;
      text-align: center;
      width: 100%;
      color:#fff;
      text-shadow: var(--text-shadow-normal);
+     margin-top:17.5%;
 }
 .cardContent{
      display: flex;
@@ -80,14 +72,14 @@
      cursor: pointer;
 }
 @media (max-width: 417px) {
-     #projects{
+     #contacct{
           width: 95%;
           border: 2vw solid #353535;
           box-shadow: var(--box-shadow-mobile);
           text-shadow: var(--text-shadow-mobile);
           margin: auto;
      }
-     #projects > h1{
+     #contact > h1{
           font-size: 10vw;
           text-shadow: var(--text-shadow-mobile);
      }
@@ -106,7 +98,6 @@
           width: 95%;
           margin: auto;
           margin-bottom: 2vh;
-          height: 30vh;
           border: 2vw solid #353535;
           box-shadow: var(--box-shadow-mobile);
           text-shadow: var(--text-shadow-mobile);
@@ -118,14 +109,14 @@
      }
 }
 @media (max-width: 850px) and (min-width: 418px) {
-     #projects{
+     #contact{
           width: 95%;
           border: 2vw solid #353535;
           box-shadow: var(--box-shadow-mobile);
           text-shadow: var(--text-shadow-mobile);
           margin: auto;
      }
-     #projects > h1{
+     #contact > h1{
           font-size: 5vw;
           text-shadow: var(--text-shadow-mobile);
      }
@@ -140,7 +131,6 @@
      .card{
           width: 40%;
           margin: auto;
-          height: 30vh;
           border: 2vw solid #353535;
           box-shadow: var(--box-shadow-mobile);
           text-shadow: var(--text-shadow-mobile);

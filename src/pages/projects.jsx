@@ -6,17 +6,22 @@ export default function projects() {
       <h1>
         Projects
       </h1>
-      <div id='cardContainer'>
-        <Card />
+      <div className='cardRow'>
+        <Card imgSrc={'../minecraft.png'} projectName={'Server creator'} projectDesc='Poorly but still developed server creation tool for Minecraft!' href={'https://github.com/jgrtowy/server-creator'}/>
+        <Card imgSrc={'../moses.png'} projectName={'MosesBot'} projectDesc='Bot made along with my classmate for our discord server' href={'https://github.com/theSaintKappa/MosesBot'} />
       </div>
+      <h2>And more to be coming!</h2>
     </div>
   )
 }
-let imgSrc = '../minecraft.png'
-function Card() {
+function Card({imgSrc, projectName, projectDesc, href}) {
   return(
-    <div className='card'>
+    <div className='card' onClick={() => {window.open(href)}}>
+      <div className='cardContent'> 
       <img src={imgSrc} className='cardImg'/>
+      <h1>{projectName}</h1><br/>
+      </div>
+      <p>{projectDesc}</p>
     </div>
   )
 }

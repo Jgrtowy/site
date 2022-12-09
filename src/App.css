@@ -1,4 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300&display=swap');
+:root{
+     background-color: #242424;
+     --text-shadow-normal: #000 .4vw .4vw .35vw;
+     --text-shadow-mobile: #000 1.4vw 1.4vw 1vw;
+
+     --box-shadow-normal: #000 .4vw .4vw .8vw;
+     --box-shadow-mobile: #000 3vw 3vw 4vw;
+     
+}
 header{
      font-family: 'Nunito';
      color: #fff;
@@ -6,11 +15,12 @@ header{
      margin: auto;
      font-size:2vw;
      text-align: center;
-     text-shadow: #000 6px 6px 5px;
-     border-radius: 1rem;
-     margin-top: .5rem;
-     border: .4rem solid #353535;
-     box-shadow: #000 10px 10px 8px;
+     text-shadow: var(--text-shadow-normal);
+     border-radius: 1vw;
+     margin-top: .5vh;
+     border: .4vw solid #353535;
+     box-shadow: var(--box-shadow-normal);
+     
 }
 nav{
      justify-content: space-around;
@@ -39,7 +49,7 @@ nav > a{
      width: 150px;
      border-radius:50%;
      margin-top: 3rem;
-     box-shadow: #000 10px 10px 8px;
+     box-shadow: var(--box-shadow-normal);
 }
 
 #main{
@@ -58,15 +68,17 @@ nav > a{
      /* background-color: #353535; */
      border-radius: 3rem;
      border: .5rem solid #353535;
-     box-shadow: #000 10px 10px 8px;
-     text-shadow: #000 6px 6px 5px;
+     box-shadow: var(--box-shadow-normal);
+     text-shadow: var(--text-shadow-normal);
 }
-:root{
-     background-color: #242424;
-}
-@media (max-width: 850px) {
+@media (max-width: 417px) {
      header{
-          font-size: 5vw
+          width: 95%;
+          margin: auto;
+          margin-bottom: 2vh;
+          font-size: 5vw;
+          box-shadow: var(--box-shadow-mobile);
+          border: 2vw solid #353535;
      }
      #main{
           width:90%;
