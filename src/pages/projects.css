@@ -1,0 +1,33 @@
+#projects{
+     text-align: center;
+     width:50%;
+     font-family: 'Nunito';
+     color:#fff;
+     height: fit-content;
+     text-align: center;
+     position: absolute;
+     top: 50%;
+     left: 50%;
+     transform: translate(-50%, -50%);
+     border-radius: 3rem;
+     border: .5rem solid #353535;
+     box-shadow: #000 10px 10px 8px;
+     text-shadow: #000 6px 6px 5px;
+}
+#projects > h1{
+     font-size: 2vw;
+}
+#cardContainer{
+     width: 100%;
+}
+.card{
+     width: 30%;
+     height: 10vh;
+}
+.cardImg{
+     width: 100px;
+     border-radius: 2rem;
+     margin: 0;
+     padding: 1rem;
+     background-color: #fff;
+}
