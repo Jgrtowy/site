@@ -1,0 +1,143 @@
+#contact{
+     text-align: center;
+     width:50%;
+     font-family: 'Nunito';
+     color:#fff;
+     height: fit-content;
+     text-align: center;
+     /* position: absolute; */
+     /* top: 50%; */
+     /* left: 50%; */
+     /* transform: translate(-50%, -50%); */
+     margin: auto;
+     margin-top: 6vh;
+     border-radius: 3vw;
+     border: .5vw solid #353535;
+     box-shadow: var(--box-shadow-normal);
+     text-shadow: var(--text-shadow-normal);
+}
+#contact > h1{
+     font-size: 2vw;
+}
+.cardRow{
+     width: 100%;
+     height: fit-content;
+     /* padding-bottom: 5rem; */
+     display: flex;
+}
+.card{
+     box-shadow: #000 .7vw .7vw 1vw;
+     width: 50%;
+     height: fit-content;
+     margin: 1.2vw;
+     /* padding: 1rem; */
+     justify-content: center;
+     border: .4vw solid #353535;
+     border-radius: 2vw;
+     color:#000;
+     text-shadow: none;
+}
+.cardImg{
+     display: flex;
+     /* margin: 1.1rem; */
+     position: relative;
+     width: 4vw;
+     height: 4vw;
+     margin: .8vw 0 0 .8vw;
+     /* border-radius: 2rem; */
+     padding: .8vw;
+     /* margin: 0; */
+     background-color: #242424;
+     /* padding: 1rem; */
+     
+}
+.cardContent > h1{
+     font-size: 1.6vw;
+     text-align: center;
+     width: 100%;
+     color:#fff;
+     text-shadow: var(--text-shadow-normal);
+     margin-top:17.5%;
+}
+.cardContent{
+     display: flex;
+}
+.card > p{
+     font-size: 1.1vw;
+     font-weight: 500;
+     color:#fff;
+     text-shadow: var(--text-shadow-normal);
+}
+.card:hover{
+     cursor: pointer;
+}
+@media (max-width: 417px) {
+     #contacct{
+          width: 95%;
+          border: 2vw solid #353535;
+          box-shadow: var(--box-shadow-mobile);
+          text-shadow: var(--text-shadow-mobile);
+          margin: auto;
+     }
+     #contact > h1{
+          font-size: 10vw;
+          text-shadow: var(--text-shadow-mobile);
+     }
+     .cardContent > h1{
+          font-size: 8vw;
+          text-shadow: var(--text-shadow-mobile);
+     }
+     .card > p{
+          font-size: 6vw;
+          text-shadow: var(--text-shadow-mobile);
+     }
+     .cardRow{
+          display: block;
+     }
+     .card{
+          width: 95%;
+          margin: auto;
+          margin-bottom: 2vh;
+          border: 2vw solid #353535;
+          box-shadow: var(--box-shadow-mobile);
+          text-shadow: var(--text-shadow-mobile);
+     }
+     .cardContent > img{
+          width: 25vw;
+          height: 25vw;
+          border-radius: 8vw;
+     }
+}
+@media (max-width: 850px) and (min-width: 418px) {
+     #contact{
+          width: 95%;
+          border: 2vw solid #353535;
+          box-shadow: var(--box-shadow-mobile);
+          text-shadow: var(--text-shadow-mobile);
+          margin: auto;
+     }
+     #contact > h1{
+          font-size: 5vw;
+          text-shadow: var(--text-shadow-mobile);
+     }
+     .cardContent > h1{
+          font-size: 3vw;
+          text-shadow: var(--text-shadow-mobile);
+     }
+     .card > p{
+          font-size: 2vw;
+          text-shadow: var(--text-shadow-mobile);
+     }
+     .card{
+          width: 40%;
+          margin: auto;
+          border: 2vw solid #353535;
+          box-shadow: var(--box-shadow-mobile);
+          text-shadow: var(--text-shadow-mobile);
+     }
+     .cardContent > img{
+          width: 10vw;
+          height: 10vw;
+          border-radius: 8vw;
+     }
+}

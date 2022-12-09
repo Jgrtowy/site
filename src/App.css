@@ -1,24 +1,65 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300&display=swap');
-img{
-     width: 203px;
-     height: 180px;
+:root{
+     background-color: #242424;
+     --text-shadow-normal: #000 .4vw .4vw .35vw;
+     --text-shadow-mobile: #000 1.4vw 1.4vw 1vw;
+
+     --box-shadow-normal: #000 .4vw .4vw .8vw;
+     --box-shadow-mobile: #000 3vw 3vw 4vw;
+     
 }
 header{
      font-family: 'Nunito';
      color: #fff;
-     width: 100%;
-     font-size:3.1rem;
+     width: 90%;
+     margin: auto;
+     font-size:2vw;
      text-align: center;
-     text-shadow: #000 6px 6px 5px;
+     text-shadow: var(--text-shadow-normal);
+     border-radius: 1vw;
+     margin-top: .5vh;
+     border: .4vw solid #353535;
+     box-shadow: var(--box-shadow-normal);
+     
 }
+nav{
+     justify-content: space-around;
+     display: flex;
+     width: 100%;
+}
+nav > a{
+     color:#fff;
+     text-decoration: none;
+}
+#pfph1{
+     width: 100%;
+}
+#pfph1 > h3{
+     font-weight: 500;
+}
+#pfph1 > h1{
+     font-weight: bolder;
+     font-size: 3rem;
+     padding: 0;
+     margin: 0;
+     margin-top: .5rem;
+}
+#pfp{
+     aspect-ratio: 1/1;
+     width: 150px;
+     border-radius:50%;
+     margin-top: 3rem;
+     box-shadow: var(--box-shadow-normal);
+}
+
 #main{
      margin: auto;
      /* display: block; */
      width:50%;
+     display:flex;
      font-family: 'Nunito';
      color:#fff;
      height: fit-content;
-     margin: auto;
      text-align: center;
      position: absolute;
      top: 50%;
@@ -27,9 +68,33 @@ header{
      /* background-color: #353535; */
      border-radius: 3rem;
      border: .5rem solid #353535;
-     box-shadow: #000 10px 10px 8px;
-     text-shadow: #000 6px 6px 5px;
+     box-shadow: var(--box-shadow-normal);
+     text-shadow: var(--text-shadow-normal);
 }
-:root{
-     background-color: #242424;
+@media (max-width: 417px) {
+     header{
+          width: 95%;
+          margin: auto;
+          margin-bottom: 2vh;
+          font-size: 5vw;
+          box-shadow: var(--box-shadow-mobile);
+          border: 2vw solid #353535;
+     }
+     #main{
+          width:90%;
+          height:80%;
+     }
+     #pfp{
+          margin: auto;
+          aspect-ratio: 1/1;
+          width:40vw;
+          height: 40vw;
+          
+     }
+     #pfph1{
+          top:5%;
+          left:50%;
+          position: absolute;
+          transform: translate(-50%,0);
+     }
 }
