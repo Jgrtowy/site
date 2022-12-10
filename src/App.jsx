@@ -1,9 +1,10 @@
-import React, { useState, useRef, useEffect } from 'React'
+import React from 'react'
 import { Route, Routes } from 'react-router-dom';
 import './App.css'
 import Navbar from "./navbar";
 import Projects from './pages/projects'
 import Contact from './pages/contact'
+import Footer from './footer'
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
           <Route path="/pages/contact" element={<Contact />}></Route>
         </Routes>
       </div>
+      <Footer/>
     </>
   )
 }

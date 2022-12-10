@@ -19,13 +19,13 @@
 #contact > h1{
      font-size: 2vw;
 }
-.cardRow{
+.contactCardRow{
      width: 100%;
      height: fit-content;
      /* padding-bottom: 5rem; */
      display: flex;
 }
-.card{
+.contactCard{
      box-shadow: #000 .7vw .7vw 1vw;
      width: 50%;
      height: fit-content;
@@ -37,21 +37,21 @@
      color:#000;
      text-shadow: none;
 }
-.cardImg{
+.contactCardImg{
      display: flex;
      /* margin: 1.1rem; */
      position: relative;
      width: 4vw;
      height: 4vw;
      margin: .8vw 0 0 .8vw;
-     /* border-radius: 2rem; */
+     border-radius: 1vw;
      padding: .8vw;
      /* margin: 0; */
      background-color: #242424;
      /* padding: 1rem; */
      
 }
-.cardContent > h1{
+.contactCardContent > h1{
      font-size: 1.6vw;
      text-align: center;
      width: 100%;
@@ -59,50 +59,52 @@
      text-shadow: var(--text-shadow-normal);
      margin-top:17.5%;
 }
-.cardContent{
+.contactCardContent{
      display: flex;
 }
-.card > p{
+.contactCard > p{
      font-size: 1.1vw;
      font-weight: 500;
      color:#fff;
      text-shadow: var(--text-shadow-normal);
 }
-.card:hover{
+.contactCard:hover{
      cursor: pointer;
 }
 @media (max-width: 417px) {
-     #contacct{
+     #contact{
           width: 95%;
-          border: 2vw solid #353535;
+          border: 1vw solid #353535;
           box-shadow: var(--box-shadow-mobile);
           text-shadow: var(--text-shadow-mobile);
-          margin: auto;
+          margin: 0;
      }
      #contact > h1{
           font-size: 10vw;
           text-shadow: var(--text-shadow-mobile);
+          
      }
-     .cardContent > h1{
+     .contactCardContent > h1{
           font-size: 8vw;
           text-shadow: var(--text-shadow-mobile);
+          margin-top: 10%;
      }
-     .card > p{
+     .contactCard > p{
           font-size: 6vw;
           text-shadow: var(--text-shadow-mobile);
      }
-     .cardRow{
+     .contactCardRow{
           display: block;
      }
-     .card{
+     .contactCard{
           width: 95%;
           margin: auto;
           margin-bottom: 2vh;
-          border: 2vw solid #353535;
+          border: 1.4vw solid #353535;
           box-shadow: var(--box-shadow-mobile);
           text-shadow: var(--text-shadow-mobile);
      }
-     .cardContent > img{
+     .contactCardContent > img{
           width: 25vw;
           height: 25vw;
           border-radius: 8vw;
@@ -111,31 +113,34 @@
 @media (max-width: 850px) and (min-width: 418px) {
      #contact{
           width: 95%;
-          border: 2vw solid #353535;
+          border: 1vw solid #353535;
           box-shadow: var(--box-shadow-mobile);
           text-shadow: var(--text-shadow-mobile);
-          margin: auto;
+          
      }
+
      #contact > h1{
           font-size: 5vw;
           text-shadow: var(--text-shadow-mobile);
+          margin-top: auto;
      }
-     .cardContent > h1{
+     .contactCardContent > h1{
           font-size: 3vw;
           text-shadow: var(--text-shadow-mobile);
      }
-     .card > p{
+     .contactCard > p{
           font-size: 2vw;
           text-shadow: var(--text-shadow-mobile);
      }
-     .card{
+     .contactCard{
           width: 40%;
           margin: auto;
-          border: 2vw solid #353535;
+          margin: 2vw;   
+          border: 1vw solid #353535;
           box-shadow: var(--box-shadow-mobile);
           text-shadow: var(--text-shadow-mobile);
      }
-     .cardContent > img{
+     .contactCardContent > img{
           width: 10vw;
           height: 10vw;
           border-radius: 8vw;

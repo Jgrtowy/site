@@ -66,7 +66,7 @@ nav > a{
      left: 50%;
      transform: translate(-50%, -50%);
      /* background-color: #353535; */
-     border-radius: 3rem;
+     border-radius: 3vw;
      border: .5rem solid #353535;
      box-shadow: var(--box-shadow-normal);
      text-shadow: var(--text-shadow-normal);
@@ -96,5 +96,26 @@ nav > a{
           left:50%;
           position: absolute;
           transform: translate(-50%,0);
+     }
+}
+::-webkit-scrollbar {
+     width: .7vw;
+}
+::-webkit-scrollbar-thumb{
+     background-color: #353535;
+     height: .5vh;
+     border-radius: 10vh;
+}
+@media (max-width: 417px) {
+     header{
+          border:1.4vw solid #353535;
+          font-size: 6vw;
+     }
+}
+@media (max-width: 850px) and (min-width: 418px) {
+     header{
+          border:1vw solid #353535;
+          margin-bottom: 2vh;
+          font-size: 3vw;
      }
 }

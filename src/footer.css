@@ -1,0 +1,33 @@
+#footer{
+     font-family: 'Nunito';
+     color:#fff;
+     display: flex;
+     position: absolute;
+     bottom: .5vh;
+     width: 35%;
+     justify-content: center;
+     font-size: .4vw;
+     border: .4vw #353535 solid;
+     left:50%;
+     transform: translate(-50%, 0);
+     box-shadow: var(--box-shadow-normal);
+     border-radius: 3vw; 
+     z-index: 100;
+     position: fixed;
+     background-color: #242424;    
+}
+@media (max-width: 417px) {
+     #footer{
+          border:1.4vw solid #353535;
+          font-size: 1.6vw;
+          width: 95%;
+     }
+}
+@media (max-width: 850px) and (min-width: 418px) {
+     #footer{
+          width: 95%;
+          border:1vw solid #353535;
+          margin-bottom: 2vh;
+          font-size: .8vw;
+     }
+}
