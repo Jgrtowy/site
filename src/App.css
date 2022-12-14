@@ -76,13 +76,15 @@ nav > a{
           width: 95%;
           margin: auto;
           margin-bottom: 2vh;
-          font-size: 5vw;
+          font-size: 6vw;
           box-shadow: var(--box-shadow-mobile);
-          border: 2vw solid #353535;
+          border: 1.4vw solid #353535;
+          text-shadow: var(--text-shadow-mobile);
      }
      #main{
           width:90%;
           height:80%;
+          text-shadow: var(--text-shadow-mobile);
      }
      #pfp{
           margin: auto;
@@ -106,16 +108,14 @@ nav > a{
      height: .5vh;
      border-radius: 10vh;
 }
-@media (max-width: 417px) {
-     header{
-          border:1.4vw solid #353535;
-          font-size: 6vw;
-     }
-}
 @media (max-width: 850px) and (min-width: 418px) {
      header{
           border:1vw solid #353535;
           margin-bottom: 2vh;
           font-size: 3vw;
+          text-shadow: var(--text-shadow-mobile);
+     }
+     #main{
+          text-shadow: var(--text-shadow-mobile);
      }
 }
